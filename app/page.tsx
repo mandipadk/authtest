@@ -24,7 +24,7 @@ function buildLoginUrl(
 
   const callbackUrlWithParams = callback.toString();
   const frontendBase = normalizeUrl(frontend.toString());
-  const redirectTo = `${frontendBase}/auth/bridge?dest=${encodeURIComponent(
+  const redirectTo = `${frontendBase}/bridge?dest=${encodeURIComponent(
     callbackUrlWithParams
   )}`;
   const loginUrl = `${frontendBase}/login?redirect_to=${encodeURIComponent(
